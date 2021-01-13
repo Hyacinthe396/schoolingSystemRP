@@ -1,0 +1,50 @@
+{
+  "name": "schoolingsystem",
+  "version": "1.0.0",
+  "description": "this will help to register students ",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startDev": "nodemon --exec babel-node src/server.js",
+    "migrate": "sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
+    "db-migrate": "npx sequelize db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyacinthe396/schoolingSystemRP.git"
+  },
+  "author": "Hyacinthe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyacinthe396/schoolingSystemRP/issues"
+  },
+  "homepage": "https://github.com/Hyacinthe396/schoolingSystemRP#readme",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.17.0",
+    "eslint-auto-fix": "^1.0.3",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "module": "^1.2.5",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "regenerator-runtime": "^0.13.7",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}
